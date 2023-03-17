@@ -1,6 +1,6 @@
-import client
 from dataclasses import dataclass
 from functools import total_ordering
+
 
 @total_ordering
 @dataclass
@@ -18,8 +18,6 @@ class Person:
 class Trade:
   def __init__(self):
     pass
-  
-
 
   def close(self):
     pass

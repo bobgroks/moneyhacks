@@ -1,3 +1,3 @@
 class Account:
   @classmethod
-  def init_account(cls):
+  def init_account(cls): ...

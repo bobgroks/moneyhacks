@@ -10,11 +10,11 @@ from loguru import logger
 Level name	Severity value	Logger method
 TRACE	5	logger.trace()
 DEBUG	10	logger.debug()
-INFO	20	logger.info()
+INFO	20	logger.info()         api_call_logger decorator
 SUCCESS	25	logger.success()
-WARNING	30	logger.warning()
-ERROR	40	logger.error()
-CRITICAL	50	logger.critical()
+WARNING	30	logger.warning() 
+ERROR	40	logger.error()        need to produce detailed tracing
+CRITICAL	50	logger.critical() need to call hard_reset() and detailed tracing
 """
 
 # logging.error(), logging.exception() or logging.critical() 
@@ -22,6 +22,38 @@ CRITICAL	50	logger.critical()
 os.getenv("TESTNET")
 
 logger.add("date.log")
+
+def log(fxn):
+  @wraps(fxn)
+  def method_wrapper(*args, **kwargs):
+    st = int(time.time()*1000)
+    print(f"{st}: CALL {fxn.__name__} with args={args} kwargs={kwargs} ")
+    res = fxn(*args, **kwargs)
+    el = st - int(time.time()*1000)
+    print(f"{st}: RESP {fxn.__name__} with args={args} kwargs={kwargs} ")
+    print(el)
+    return res
+  return method_wrapper
+
+def api_call_logger(cls):
+  for name, fxn in vars(cls).items():
+    if callable(fxn):
+      setattr(cls, name, log(fxn))
+  return cls
+
+
+def async_timeit(func):
+  @wraps(func)
+  async def timeit_wrapper(*args, **kwargs):
+    start_time = time.monotonic_ns()
+    result = await func(*args, **kwargs)
+    end_time = time.monotonic_ns()
+    total_time = end_time - start_time
+    print(f'Function {func.__name__}{args} {kwargs} Took {total_time:.4f} seconds')
+    return result
+  return timeit_wrapper
+
+
 
 def logger_wraps(*, entry=True, exit=True, resp=True, level: str = 'info'):
 
@@ -68,16 +100,6 @@ def timeit(is_logging=False):
     return timeit_wrapper
   return decorator
 
-def async_timeit(func):
-  @wraps(func)
-  async def timeit_wrapper(*args, **kwargs):
-    start_time = time.monotonic_ns()
-    result = await func(*args, **kwargs)
-    end_time = time.monotonic_ns()
-    total_time = end_time - start_time
-    print(f'Function {func.__name__}{args} {kwargs} Took {total_time:.4f} seconds')
-    return result
-  return timeit_wrapper
 
 @timeit(is_logging=False)
 def waste():

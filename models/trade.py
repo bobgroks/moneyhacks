@@ -1,23 +1,16 @@
+from typing import List
 from dataclasses import dataclass
-from functools import total_ordering
+from models.timing import Time
 
-
-@total_ordering
 @dataclass
-class Person:
-  name: str
-  age: int
-
-  def __eq__(self, other):
-    return self.age == other.age
-
-  def __lt__(self, other):
-    return self.age < other.age
-
-
 class Trade:
-  def __init__(self):
-    pass
+  is_executed: bool
+  time_created: Time
+
+
 
   def close(self):
+    # see if trade has been executed
+    # cancel trade if still open
+    # close trade
     pass

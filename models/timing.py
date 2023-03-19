@@ -2,9 +2,10 @@ import time
 from typing import Optional, Union
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from functools import total_ordering
 # from dateutil import parser
 
-
+@total_ordering
 @dataclass(order=True)
 class Time:
   ms: int
@@ -41,7 +42,8 @@ class Time:
     raise NotImplementedError("don't need this yet")
 
   def __str__(self) -> str: return f"ms: {self.ms}, time: {str(self.dt)} {self.tz}"
-  def __sub__(self, other: Union['Time', str, int]) -> int: return self.ms - other.ms
+  def __sub__(self, other: Union['Time', str, int]) -> int: return self.ms - other.ms if isinstance(other, Time) else self.ms - int(other)
+  def __eq__(self, other: 'Time'): return self.ms == other.ms
 
   
 

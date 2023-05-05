@@ -1,0 +1,68 @@
+1679291536714 | INFO     | models.log:method_wrapper:40 - 1679291536714: CALL __init__ with args=(<__main__.Binance object at 0x1036d4410>,) kwargs={}
+1679291540756 | INFO     | models.log:method_wrapper:44 - 1679291540756: RESP __init__ | time elapsed 4042 | with args=(<__main__.Binance object at 0x1036d4410>,) kwargs={} | ret=None
+1679291540756 | INFO     | models.log:method_wrapper:40 - 1679291540756: CALL test with args=(<__main__.Binance object at 0x1036d4410>, 'a', 0.1) kwargs={}
+1679291541762 | INFO     | models.log:method_wrapper:44 - 1679291541761: RESP test | time elapsed 1005 | with args=(<__main__.Binance object at 0x1036d4410>, 'a', 0.1) kwargs={} | ret=6
+1679291541763 | INFO     | models.log:method_wrapper:40 - 1679291541763: CALL test with args=(<__main__.Binance object at 0x1036d4410>, 'b', 1.1) kwargs={}
+1679291542768 | INFO     | models.log:method_wrapper:44 - 1679291542768: RESP test | time elapsed 1005 | with args=(<__main__.Binance object at 0x1036d4410>, 'b', 1.1) kwargs={} | ret=6
+1679291542770 | INFO     | models.log:method_wrapper:40 - 1679291542770: CALL test with args=(<__main__.Binance object at 0x1036d4410>, 'c', 2.1) kwargs={}
+1679291543776 | INFO     | models.log:method_wrapper:44 - 1679291543775: RESP test | time elapsed 1005 | with args=(<__main__.Binance object at 0x1036d4410>, 'c', 2.1) kwargs={} | ret=6
+1679291757514 | INFO     | 1679291757514: CALL __init__ with args=(<__main__.Binance object at 0x105736610>,) kwargs={}
+1679291761332 | INFO     | 1679291761332: RESP __init__ | time elapsed 3818 | with args=(<__main__.Binance object at 0x105736610>,) kwargs={} | ret=None
+1679291761334 | INFO     | fuck
+1679291761334 | INFO     | 1679291761334: CALL test with args=(<__main__.Binance object at 0x105736610>, 'a', 0.1) kwargs={}
+1679291762340 | INFO     | 1679291762340: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x105736610>, 'a', 0.1) kwargs={} | ret=6
+1679291762342 | INFO     | fuck
+1679291762342 | INFO     | 1679291762342: CALL test with args=(<__main__.Binance object at 0x105736610>, 'b', 1.1) kwargs={}
+1679291763348 | INFO     | 1679291763348: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x105736610>, 'b', 1.1) kwargs={} | ret=6
+1679291763349 | INFO     | fuck
+1679291763350 | INFO     | 1679291763350: CALL test with args=(<__main__.Binance object at 0x105736610>, 'c', 2.1) kwargs={}
+1679291764351 | INFO     | 1679291764351: RESP test | time elapsed 1001 | with args=(<__main__.Binance object at 0x105736610>, 'c', 2.1) kwargs={} | ret=6
+1679291764352 | INFO     | fuck
+1679291871633 | INFO     | 1679291871633: CALL __init__ with args=(<__main__.Binance object at 0x10321e290>,) kwargs={}
+1679291874153 | INFO     | 1679291874153: RESP __init__ | time elapsed 2520 | with args=(<__main__.Binance object at 0x10321e290>,) kwargs={} | ret=None
+1679291874154 | INFO     | fuck
+1679291874154 | INFO     | 1679291874154: CALL test with args=(<__main__.Binance object at 0x10321e290>, 'a', 0.1) kwargs={}
+1679291875160 | INFO     | 1679291875160: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x10321e290>, 'a', 0.1) kwargs={} | ret=6
+1679291875161 | INFO     | fuck
+1679291875162 | INFO     | 1679291875162: CALL test with args=(<__main__.Binance object at 0x10321e290>, 'b', 1.1) kwargs={}
+1679291876167 | INFO     | 1679291876167: RESP test | time elapsed 1005 | with args=(<__main__.Binance object at 0x10321e290>, 'b', 1.1) kwargs={} | ret=6
+1679291876169 | INFO     | fuck
+1679291876169 | INFO     | 1679291876169: CALL test with args=(<__main__.Binance object at 0x10321e290>, 'c', 2.1) kwargs={}
+1679291877175 | INFO     | 1679291877175: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x10321e290>, 'c', 2.1) kwargs={} | ret=6
+1679291877177 | INFO     | fuck
+1679291894371 | INFO     | 1679291894371: CALL __init__ with args=(<__main__.Binance object at 0x10355a750>,) kwargs={}
+1679291897137 | INFO     | 1679291897137: RESP __init__ | time elapsed 2766 | with args=(<__main__.Binance object at 0x10355a750>,) kwargs={} | ret=None
+1679291897139 | INFO     | fuck
+1679291897139 | INFO     | 1679291897139: CALL test with args=(<__main__.Binance object at 0x10355a750>, 'a', 0.1) kwargs={}
+1679291898145 | INFO     | 1679291898145: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x10355a750>, 'a', 0.1) kwargs={} | ret=6
+1679291898146 | INFO     | fuck
+1679291898146 | INFO     | 1679291898146: CALL test with args=(<__main__.Binance object at 0x10355a750>, 'b', 1.1) kwargs={}
+1679291899152 | INFO     | 1679291899152: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x10355a750>, 'b', 1.1) kwargs={} | ret=6
+1679291899154 | INFO     | fuck
+1679291899154 | INFO     | 1679291899154: CALL test with args=(<__main__.Binance object at 0x10355a750>, 'c', 2.1) kwargs={}
+1679291900156 | INFO     | 1679291900156: RESP test | time elapsed 1002 | with args=(<__main__.Binance object at 0x10355a750>, 'c', 2.1) kwargs={} | ret=6
+1679291900157 | INFO     | fuck
+1679291973109 | INFO     | 1679291973109: CALL __init__ with args=(<__main__.Binance object at 0x102910050>,) kwargs={}
+1679291975436 | INFO     | 1679291975436: RESP __init__ | time elapsed 2327 | with args=(<__main__.Binance object at 0x102910050>,) kwargs={} | ret=None
+1679291975438 | INFO     | fuck
+1679291975438 | INFO     | 1679291975438: CALL test with args=(<__main__.Binance object at 0x102910050>, 'a', 0.1) kwargs={}
+1679291976444 | INFO     | 1679291976443: RESP test | time elapsed 1005 | with args=(<__main__.Binance object at 0x102910050>, 'a', 0.1) kwargs={} | ret=6
+1679291976445 | INFO     | fuck
+1679291976445 | INFO     | 1679291976445: CALL test with args=(<__main__.Binance object at 0x102910050>, 'b', 1.1) kwargs={}
+1679291977451 | INFO     | 1679291977451: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x102910050>, 'b', 1.1) kwargs={} | ret=6
+1679291977452 | INFO     | fuck
+1679291977452 | INFO     | 1679291977452: CALL test with args=(<__main__.Binance object at 0x102910050>, 'c', 2.1) kwargs={}
+1679291978458 | INFO     | 1679291978458: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x102910050>, 'c', 2.1) kwargs={} | ret=6
+1679291978459 | INFO     | fuck
+1679292022531 | INFO     | 1679292022531: CALL __init__ with args=(<__main__.Binance object at 0x10313e610>,) kwargs={}
+1679292026260 | INFO     | 1679292026260: RESP __init__ | time elapsed 3729 | with args=(<__main__.Binance object at 0x10313e610>,) kwargs={} | ret=None
+1679292026261 | INFO     | fuck
+1679292026261 | INFO     | 1679292026261: CALL test with args=(<__main__.Binance object at 0x10313e610>, 'a', 0.1) kwargs={}
+1679292027267 | INFO     | 1679292027267: RESP test | time elapsed 1006 | with args=(<__main__.Binance object at 0x10313e610>, 'a', 0.1) kwargs={} | ret=6
+1679292027268 | INFO     | fuck
+1679292027269 | INFO     | 1679292027269: CALL test with args=(<__main__.Binance object at 0x10313e610>, 'b', 1.1) kwargs={}
+1679292028274 | INFO     | 1679292028274: RESP test | time elapsed 1005 | with args=(<__main__.Binance object at 0x10313e610>, 'b', 1.1) kwargs={} | ret=6
+1679292028277 | INFO     | fuck
+1679292028277 | INFO     | 1679292028277: CALL test with args=(<__main__.Binance object at 0x10313e610>, 'c', 2.1) kwargs={}
+1679292029281 | INFO     | 1679292029281: RESP test | time elapsed 1004 | with args=(<__main__.Binance object at 0x10313e610>, 'c', 2.1) kwargs={} | ret=6
+1679292029283 | INFO     | fuck
